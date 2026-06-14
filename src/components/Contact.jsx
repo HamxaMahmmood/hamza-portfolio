@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { profile } from "../data/portfolio";
-import { Github, Linkedin, Mail, Send } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, PhoneCallIcon, Send } from "lucide-react";
 
 export default function Contact() {
   const [form, setForm] = useState({ email: "", subject: "", message: "" });
@@ -39,6 +39,9 @@ export default function Contact() {
               </a>
               <a href={profile.links.github} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-ink-muted hover:text-signal transition-colors">
                 <Github size={16} /> github.com/HamxaMahmmood
+              </a>
+              <a target="_blank" rel="noreferrer" className="flex items-center gap-3 text-ink-muted hover:text-signal transition-colors">
+                <Phone size={16} /> +92-319-0476259
               </a>
               <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-3 text-ink-muted hover:text-signal transition-colors">
                 <Linkedin size={16} /> linkedin.com/in/hamza-mahmood
